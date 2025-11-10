@@ -59,7 +59,7 @@ namespace GetScoreMatch
             int yy = 20;
             int yyy = 20;
             string projectPath = Directory.GetParent(Application.StartupPath).Parent.Parent.FullName;
-            string imagePath = Path.Combine(projectPath, "images", "logo.png");
+            string imagePath = Path.Combine(projectPath, "images/logo.png");
 
             
             foreach (var item in HTMLSourceCode)
