@@ -58,7 +58,7 @@ namespace GetScoreMatch
             int y = 20;
             int yy = 20;
             int yyy = 20;
-            string projectPath = "images\logo.png";
+            string projectPath = Application.StartupPath + "/../..\\" + "images\logo.jpg";
 
 
             
