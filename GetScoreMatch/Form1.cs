@@ -58,7 +58,10 @@ namespace GetScoreMatch
             int y = 20;
             int yy = 20;
             int yyy = 20;
+            string projectPath = Directory.GetParent(Application.StartupPath).Parent.Parent.FullName;
+            string imagePath = Path.Combine(projectPath, "images", "logo.png");
 
+            
             foreach (var item in HTMLSourceCode)
             {
                 e.Graphics.DrawString(item.Leauge, f, Brushes.Black, 540, 10 );
@@ -71,7 +74,7 @@ namespace GetScoreMatch
                     e.Graphics.DrawString(c.TeamA, f, Brushes.Black, 530, 38 + yy);
                     e.Graphics.DrawString(c.ScoreA, ff, Brushes.Black, 460, 30 + y);
                     e.Graphics.DrawLine(Pens.LightGray, 0, 70 + yyy, 1000, 70 + yyy);
-                    e.Graphics.DrawImage(Image.FromFile("logo.jpg"), 13, 1115, 100, 41);
+                    e.Graphics.DrawImage(Image.FromFile(projectPath), 13, 1115, 100, 41);
                     y += 68;
                     yy += 68;
                     yyy += 68;
